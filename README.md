@@ -9,7 +9,7 @@ sh scripts/setup.sh
 Now we are going to trim our raw fastq files using trimmomatic, and then map them to a reference genome using bwa. We will have to run each command twice for the two samples, but with some bash scriping we could use wildcards to automate these commands.
 
 ```
-while read samp; do trimmomatic PE -threads 2 data/raw_fastq/"$samp".fastq data/trimmed/"$samp"_trimmed.fastq ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 MINLEN:36 ; done <scripts/samples
+while read samp; do trimmomatic SE -threads 2 data/raw_fastq/"$samp".fastq data/trimmed/"$samp"_trimmed.fastq ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 MINLEN:36 ; done <scripts/samples
 ```
 Then we do the same for bwa to map to the reference genome
 ```
