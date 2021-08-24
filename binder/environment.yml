@@ -17,3 +17,4 @@ dependencies:
   - gatk4 ==4.1.4.1
   - vcftools ==0.1.16
   - ncurses
+  - python=3
