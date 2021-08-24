@@ -16,5 +16,5 @@ dependencies:
   - bcftools ==1.12
   - gatk4 ==4.1.4.1
   - vcftools ==0.1.16
-  - ncurses
+  - ncurses==6.2
   - python=3
