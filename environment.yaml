@@ -10,3 +10,4 @@ dependencies:
   - bwa ==0.7.17
   - samtools ==1.9
   - gatk4 ==4.1.4.1
+  - vcftools ==0.1.16
