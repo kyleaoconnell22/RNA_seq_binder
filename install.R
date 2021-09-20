@@ -1,5 +1,5 @@
 install.packages('checkpoint')
 install.packages('ggplot2')
 install.packages('ape')
-install.packages('adegenet')
+install.packages('tidyverse')
 
